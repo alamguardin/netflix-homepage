@@ -29,34 +29,24 @@
                     </ul>
                     <div class="navbar__actions">
                         <div class="navbar__search">
-                            <label for="inputSearch" class="navbar__input">
-                                <i class='bx bx-search'></i>
-                                <input type="text" class="navbar__control" id="inputSearch">
-                            </label>
-                            <div class="navbar__dropdown">
-                                <div class="navbar__dropdown-trigger">
-                                    <button class="navbar__dropdown-btn">
-                                        <span class="navbar__user-img">
-                                            <img src="assets/user.jpg" alt="user image">
-                                        </span>
-                                        <i class='bx bxs-chevron-down'></i>
-                                    </button>
-                                </div>
-                                <div class="navbar__dropdown-menu">
-                                    <div class="navbar__dropdown-content">
-                                        <a href="#" class="navbar__dropdown-item">
-                                            <i class='bx bx-user'></i> Account
-                                        </a>
-                                        <a href="#" class="navbar__dropdown-item">
-                                            <i class='bx bx-cog' ></i> Settings
-                                        </a>
-                                        <a href="#" class="navbar__dropdown-item">
-                                            <i class='bx bx-help-circle' ></i> Help
-                                        </a>
-                                        <a href="#" class="navbar__dropdown-item">
-                                            <i class='bx bx-power-off' ></i> Sign off
-                                        </a>
-                                    </div>
+                            <label for="inputSearch" class="navbar__input"><i class='bx bx-search'></i></label>
+                            <input type="text" class="navbar__control" id="inputSearch" placeholder="Type something">
+                        </div>
+                        <div class="navbar__dropdown">
+                            <div class="navbar__dropdown-trigger">
+                                <button class="navbar__dropdown-btn" id="dropdown-button">
+                                    <span class="navbar__user-img">
+                                        <img src="assets/user.jpg" alt="user image">
+                                    </span>
+                                    <i class='bx bxs-chevron-down'></i>
+                                </button>
+                            </div>
+                            <div class="navbar__dropdown-menu" id="dropdown-menu">
+                                <div class="navbar__dropdown-content">
+                                    <a href="#" class="navbar__dropdown-item"><i class='bx bx-user'></i> Account</a>
+                                    <a href="#" class="navbar__dropdown-item"><i class='bx bx-cog'></i> Settings</a>
+                                    <a href="#" class="navbar__dropdown-item"><i class='bx bx-help-circle'></i> Help</a>
+                                    <a href="#" class="navbar__dropdown-item"><i class='bx bx-power-off'></i> Sign off</a>
                                 </div>
                             </div>
                         </div>
