@@ -156,6 +156,7 @@ body {
     padding: 8px;
     border-radius: 10px;
     transition: .2s all ease;
+    z-index: 10;
 }
 
 .navbar__dropdown-menu.active {
@@ -183,5 +184,36 @@ body {
 
 .navbar__dropdown-item:hover {
     background: var(--bg-color);
+    color: var(--text-primary);
+}
+
+/* Banner styles */
+.banner {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 50%;
+    position: absolute;
+    /* top: calc(450px - 50%); */
+    left: 40px;
+    bottom: 40px;
+}
+
+.banner__title {
+    color: var(--text-primary);
+}
+
+.banner__description {
     color: var(--text-primary);
 }
