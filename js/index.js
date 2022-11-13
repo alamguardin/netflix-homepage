@@ -1,6 +1,9 @@
 const btnDropdown = document.querySelector('#dropdown-button');
 
-btnDropdown.addEventListener('click', () => {
-    document.querySelector('#dropdown-button').classList.toggle('active');
-    document.querySelector('#dropdown-menu').classList.toggle('active');
+btnDropdown.addEventListener('focus', () => {
+    document.querySelector('#dropdown-menu').classList.add('active');
+})
+
+btnDropdown.addEventListener('blur', () => {
+    document.querySelector('#dropdown-menu').classList.remove('active');
 })
